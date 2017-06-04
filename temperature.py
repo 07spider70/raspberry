@@ -41,15 +41,3 @@ def main(): #main function
 
 if __name__ == '__main__':
     main()
-"""
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-GPIO.setup(pin, GPIO.OUT)
-p = sub.Popen('vcgencmd measure_temp', stdout = sub.PIPE, shell=True)
-output, err = p.communicate()
-temp = re.findall(r'\d+',str(output))
-if temp[0] >= max_temperature:
-    GPIO.output(pin,True)
-else:
-    GPIO.cleanup()
-"""
