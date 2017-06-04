@@ -6,4 +6,4 @@
 #I will use their images
 #I used NPN transistor for power fan
 #you can see schematic
-<![raspberry/schema.png]()
+<img src="https://cdn-images-1.medium.com/max/1000/1*kD7Nv0KudnLL-9XKJe8t0w.png" width="350"/>
