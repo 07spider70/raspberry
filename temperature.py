@@ -17,9 +17,6 @@ def get_temperature():  #return value of temperature
 
     p = subprocess.Popen('vcgencmd measure_temp', stdout = subprocess.PIPE, shell=True)
     output, err = p.communicate()
-
-
-
     temp = re.findall(r'\d+',str(output))
     return temp[0]
 
