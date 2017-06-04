@@ -5,8 +5,8 @@ import re
 import RPi.GPIO as GPIO
 
 
-pin = 18    #pin where is fan connected
-max_temperature = 40 #our highest comfortable temperature
+fan_pin = 18    #pin where is fan connected
+max_temperature = 20 #our highest comfortable temperature
 
 def setup(pin): #setup pin
     GPIO.setmode(GPIO.BCM)
