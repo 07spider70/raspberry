@@ -1,6 +1,6 @@
 <html>
 <body>
-<head1>Automatize fan control on RaspberryPi</head1>
+<h2>Automatize fan control on RaspberryPi</h2>
 <p>#Inspirited by: https://hackernoon.com/how-to-control-a-fan-to-cool-the-cpu-of-your-raspberrypi-3313b6e7f92c</p>
 
 <p>#I will use their images</p>
