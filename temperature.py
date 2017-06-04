@@ -7,6 +7,7 @@ from time import sleep
 
 fan_pin = 18    #pin where is fan connected
 max_temperature = 40 #our highest comfortable temperature
+time = 5    #check temperature every 5 seconds
 
 def setup(pin): #setup pin
     GPIO.setmode(GPIO.BCM)
@@ -36,7 +37,7 @@ def main(): #main function
                 fan_on(fan_pin)
             else:
                 fan_off(fan_pin)
-            sleep(5)
+            sleep(time)
     except:
         clean_gpio()
 
