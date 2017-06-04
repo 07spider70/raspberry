@@ -12,7 +12,7 @@
 
 <h2>Install</h2>
 <p>Step 1., clone repository and change path in sh script to start python script. </p>
-<p>Step 2., make script executable with command:<br/><i> chmod 755 launcher.sh</i></p>
+<p>Step 2., make script executable with command:<p><i> chmod 755 launcher.sh</i></p></p>
 <p><b>OPTIONALY</b>
 <p>Create logs directory, where cron table storage logs of crashes</p>
 <p>Step 3., use these commands to start sh script on start raspberry</p>
