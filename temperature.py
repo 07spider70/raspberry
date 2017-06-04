@@ -6,7 +6,7 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 fan_pin = 18    #pin where is fan connected
-max_temperature = 20 #our highest comfortable temperature
+max_temperature = 40 #our highest comfortable temperature
 
 def setup(pin): #setup pin
     GPIO.setmode(GPIO.BCM)
@@ -27,10 +27,10 @@ def control():
     return()
 
 def fan_on(pin):    #fan start
-    GPIO.output(pin,True)
+    GPIO.output(pin,1)
 
 def fan_off(pin):   #fan stop
-    GPIO.output(pin,False)
+    GPIO.output(pin,0)
 
 def clean_gpio(): #clean GPIO
     GPIO.cleanup()
