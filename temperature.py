@@ -19,13 +19,6 @@ def get_temperature():  #return value of temperature
     temp = re.findall(r'\d+',str(output))
     return temp[0]
 
-def control():
-    if int(get_temperature()) >= max_temperature:
-        fan_on(fan_pin)
-    else:
-        fan_off(fan_pin)
-    return()
-
 def fan_on(pin):    #fan start
     GPIO.output(pin,1)
 
