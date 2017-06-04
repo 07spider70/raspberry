@@ -7,7 +7,7 @@ import RPi.GPIO as GPIO
 
 pin = 18    #pin where is fan connected
 max_temperature = 40 #our highest comfortable temperature
-"""
+
 def setup(pin): #setup pin
     GPIO.setmode(GPIO.BCM)
     GPIO.setwarnings(False)
@@ -32,7 +32,7 @@ def clean_gpio(): #clean GPIO
 def main(): #main function
     setup(fan_pin)
     try:
-        if get_temperature() >= max_temperature:
+        if int(get_temperature()) >= max_temperature:
             fan_on(fan_pin)
         else:
             fan_off(fan_pin)
@@ -52,3 +52,4 @@ if temp[0] >= max_temperature:
     GPIO.output(pin,True)
 else:
     GPIO.cleanup()
+"""
